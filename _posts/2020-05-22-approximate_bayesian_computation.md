@@ -48,6 +48,7 @@ In words that means: always update **&theta;** if jumping into this direction is
 The algorithm learns: outcome is a Markov chain with the stationary distribution p(**&theta;** \| being very close (&le; &epsilon;) to the data). That is, ABC MCMC is guaranteed to converge to the target approximate posterior distribution.
 
 <ins>Cons:</ins>
+
 Potentially low acceptance probability: the correlated nature of samples coupled with the potentially low acceptance probability may result in very long chains. The chain may get stuck in regions of low probability for long periods of time.
 
 ### ABC Sequential Monte Carlo
