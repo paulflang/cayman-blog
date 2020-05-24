@@ -8,6 +8,7 @@
 layout: home
 ---
 
+<head>
 <style>
 * {
   box-sizing: border-box;
@@ -72,6 +73,7 @@ footer {
   }
 }
 </style>
+</head>
 
 <figure>
   <img border="0" src="https://media-exp1.licdn.com/dms/image/C4D03AQGkNgGMjAGfnA/profile-displayphoto-shrink_200_200/0?e=1595462400&v=beta&t=XDOZ3cHMXgG4ICh2haW2T7oEU8o884oYzal2cjPbQ2I" align="left" alt="Paul Lang"/>
