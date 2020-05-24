@@ -3,8 +3,6 @@ layout: post
 title: "Approximate Bayesian Computation"
 ---
 
-### Approximate Bayesian Computation
-
 The following content is largely taken from [Toni et al.](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2008.0172).
 
 Approximate Bayesian Computation (ABC) is a Bayesian parameter estimation method (note that Bayesian methods typically become infeasible as the dimensionality of the parameter space increases beyond a few dozens). You simply sample parameters from a prior, and accept the sample if the parameters also explain the data well. That way, you combine both, the prior and the likelihood. You repeat this multiple times to get a whole distribution of possible parameter values (i.e. the posterior) rather than a single estimate. This approach is especially useful when the calculation of the likelihood is tough, as this step is replaced with a comparison between simulated and observed data. Only if simulated and observed data are close (wrt a chosen distance function) the chosen parameter set is accepted.
@@ -50,6 +48,7 @@ In words that means: always update **&theta;** if jumping into this direction is
 The algorithm learns: outcome is a Markov chain with the stationary distribution p(**&theta;** \| being very close (&le; &epsilon;) to the data). That is, ABC MCMC is guaranteed to converge to the target approximate posterior distribution.
 
 <ins>Cons:</ins>
+
 Potentially low acceptance probability: the correlated nature of samples coupled with the potentially low acceptance probability may result in very long chains. The chain may get stuck in regions of low probability for long periods of time.
 
 ### ABC Sequential Monte Carlo

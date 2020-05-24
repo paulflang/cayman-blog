@@ -24,7 +24,7 @@ In simulated annealing
 
 Note the following: If E(x) is the negative log-likelihood/posterior and the finial k<sub>B</sub>T would be one, then simulated annealing samples from the likelihood/posterior function. But I think the purpose of simulated annealing is not to sample from the likelihood/posterior function, but rather to find its maximum (i.e. the final k<sub>B</sub>T is close to zero.
 
-### [](#header-3)Parallel tempering
+#### [](#header-3)Parallel tempering
 In parallel tempering
 *   The acceptance rate is min(1, e<sup>-ΔE(x)/k<sub>b</sub>T</sup>)
 *   Multiple MCMCs of different temperatures T are run in parallel
