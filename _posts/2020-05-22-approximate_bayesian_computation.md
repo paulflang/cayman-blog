@@ -3,8 +3,6 @@ layout: post
 title: "Approximate Bayesian Computation"
 ---
 
-### Approximate Bayesian Computation
-
 The following content is largely taken from [Toni et al.](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2008.0172).
 
 Approximate Bayesian Computation (ABC) is a Bayesian parameter estimation method (note that Bayesian methods typically become infeasible as the dimensionality of the parameter space increases beyond a few dozens). You simply sample parameters from a prior, and accept the sample if the parameters also explain the data well. That way, you combine both, the prior and the likelihood. You repeat this multiple times to get a whole distribution of possible parameter values (i.e. the posterior) rather than a single estimate. This approach is especially useful when the calculation of the likelihood is tough, as this step is replaced with a comparison between simulated and observed data. Only if simulated and observed data are close (wrt a chosen distance function) the chosen parameter set is accepted.
